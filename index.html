@@ -1,80 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sakshi Kekre's portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Link to your CSS file -->
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Kekre's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Sakshi Kekre</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section id="hero">
-      <h1>Sakshi Kekre</h1>
-      <p>Software Engineer</p>
-      <a href="#contact" class="cta-button">Contact Me</a>
+    <section id="hero" class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Sakshi Kekre</h1>
+            <p class="lead">Software Engineer</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Contact Me</a>
+        </div>
     </section>
 
-    <section id="about">
-      <h2>A Little About Me</h2>
-      <p>
-        Hello hello! Thanks for visiting my website :) <br />
-        I am a passionate coder, an avid learner and an enthusiastic adventurer! <br />
-        Let me take you through my story briefly.
-      </p>
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">A Little About Me</h2>
+            <p class="lead text-center">
+                Hello hello! Thanks for visiting my website :) <br>
+                I am a passionate coder, an avid learner, and an enthusiastic adventurer! <br>
+                Let me take you through my story briefly.
+            </p>
+        </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>AI based FinTech product</h3>
-        <p>
-          In this tough economy, I believe no techie should have a single source of income. <br />
-          We must be aware of the amazing opportunities that the financial domain has for us. <br />
-          In order to equip myself with the nitty-gretties of investment and stock trading, I decided to do a project in this field. <br/>
-          I am leveraging the power of AI and ML models to come up with a profitable algotithmic trading solution
-        </p>
-      </div>
-      <div class="project">
-        <h3>LLM based employee management portal</h3>
-        <p>To learn more about Large Language models such as chatGPT, and understanding how they can be applied to some basic generative AI usecases,
-            I embarked on the journey to fine tune a GPT 3.5 model (ada). <br/>
-            I created a web based chat-bot-style interface to the tuned model to help employees of a dummy organization interact with it and learn more about the company's policies in a fun interactive way </p>
-      </div>
-      <!-- Add more project sections as needed -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">AI based FinTech product</h3>
+                            <p class="card-text">
+                                In this tough economy, I believe no techie should have a single source of income. <br>
+                                We must be aware of the amazing opportunities that the financial domain has for us. <br>
+                                In order to equip myself with the nitty-gritties of investment and stock trading, I decided to do a project in this field. <br>
+                                I am leveraging the power of AI and ML models to come up with a profitable algorithmic trading solution.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">LLM based employee management portal</h3>
+                            <p class="card-text">
+                                To learn more about Large Language models such as chatGPT, and understanding how they can be applied to some basic generative AI use cases, I embarked on the journey to fine-tune a GPT 3.5 model (ada). <br>
+                                I created a web-based chat-bot-style interface to the tuned model to help employees of a dummy organization interact with it and learn more about the company's policies in a fun interactive way.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out to me:</p>
-      <ul>
-        <li>Email: sakshi.kekre@gmail.com</li>
-        <li>
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/sakshikekre/" target="_blank"
-            >LinkedIn</a
-          >
-        </li>
-        <li>
-          GitHub:
-          <a href="https://github.com/SakshiKekre" target="_blank"
-            >GitHub</a
-          >
-        </li>
-      </ul>
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <ul class="list-unstyled text-center">
+                        <li>Email: sakshi.kekre@gmail.com</li>
+                        <li>
+                            LinkedIn:
+                            <a href="https://www.linkedin.com/in/sakshikekre/" target="_blank" class="text-white">LinkedIn</a>
+                        </li>
+                        <li>
+                            GitHub:
+                            <a href="https://github.com/SakshiKekre" target="_blank" class="text-white">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-      <p>&copy; 2023 Sakshi Kekre. Keeping It Dark For The Environment :)</p>
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Sakshi Kekre</p>
+        </div>
     </footer>
-  </body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
